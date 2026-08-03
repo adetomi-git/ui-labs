@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hero {
+    background-color: #0e1724;
+    background-image: url("src/works.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.topnav {
+    height: 84px;
+    width: 100%;
+    display: flex;
+    padding-inline: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.topnav .top-left {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.topnav .top-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.topnav a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+.topnav a:hover {
+    opacity: 0.85;
+}
+
+.topnav .post {
+    background-color: #e60278;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+.hero-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 40px;
+}
+.hero-div {
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero-div h1 {
+    color: #fcfcfd;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+}
+.hero-text {
+    color: #e8ecf1;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.hero-div .btn {
+    display: inline-block;
+    background-color: #e60278;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 8px;
+    align-self: center;
+}
+.bottom-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 24px 40px 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.bottom-links a {
+    color: #9aa3b2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+@media (max-width: 900px) {
+    .hero-div h1 {
+    font-size: 32px;
+    }
+    .hero-text {
+    font-size: 18px;
+    }
+}
+@media (max-width: 800px) {
+    .topnav .top-right a:not(.post) {
+    display: none;
+    }
+    .topnav {
+    padding-inline: 20px;
+    }
+    .hero-div h1 {
+    font-size: 28px;
+    }
+    .bottom-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-inline: 20px;
+    }
+}
