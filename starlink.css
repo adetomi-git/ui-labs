@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.hero {
+    background-image: url('..src/starlink-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 3px, solid black;
+    height: 100vh;
+    width: 100vw;
+}
+.topnav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding-inline: 80px;
+    padding-block: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.topnav .top-left{
+    display: flex;
+    align-items: center;
+}
+.topnav a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color:white;
+    margin-inline: 20px;
+}
+.topnav .menu {
+    display: none;
+    position: relative;
+}
+.topnav .menu-div {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: all is ease-in-out;
+    width: 200px;
+    height: 100vw;
+    background-color: black;
+}
+.topnav .menu:focus-within.menu-div {
+    right: 0;
+}
+.hero .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.hero-div {
+    width: 80vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero-div h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    max-width: 500px;
+}
+.hero-div .hero-subtitle, 
+.hero-div .starting {
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.hero-div .starting {
+    font-size: 12px;
+}
+.hero-div .price {
+    color: white;
+    opacity: 0.0;
+}
+.hero-frequency {
+    font-size: 20px;
+}
+.hero-div .hero-cta {
+    display: flex;
+    gap: 40px;
+    padding-top: 50px;
+}
+.hero-cta button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.hero-cta view {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(225, 225, 225);
+}
+@media (max-width: 1000px) {
+    .hero .topnav .call {
+        display: none;
+    }
+    .hero-div h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 800px) {
+    .hero .topnav .top-right {
+        display: none;
+    }
+    .hero .topnav .top-left .topnav-link {
+        display: none
+    }
+    .hero .topnav {
+        padding-inline: 20px;
+    }
+    .topnav .menu {
+        display: block;
+    }
+}

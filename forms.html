@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Student Registration Form</title>
+</head>
+
+<body style="
+    background:rgb(243, 241, 248);
+    font-family:Arial, sans-serif;
+    padding-top:40px;
+    padding-bottom:40px;
+    ">
+
+    <div style="
+        background:#eef3f8;
+        width:700px;
+        margin:auto;
+        padding:30px;
+        border-radius:10px;
+        ">
+
+        <h1 style="
+            color:gray;
+            text-align:center;
+            margin-bottom:10px;
+            ">
+            New Student Registration Form
+        </h1>
+
+        <p style="
+            text-align:center;
+            color:gray;
+            margin-bottom:30px;
+            ">
+            Please complete the form below.
+        </p>
+
+        <form>
+
+            <div style="
+                margin-bottom:20px;
+                ">
+                <label><b>Full Name</b></label>
+
+                <div style="
+                    display:flex;
+                    gap:20px;
+                    margin-top:8px;
+                    ">
+                    <input
+                        type="text"
+                        name="first-name"
+                        id="first-name"
+                        placeholder="First Name"
+                        required
+                        style="
+                        width:100%;
+                        height:35px;
+                        box-sizing:border-box;
+                        ">
+
+                    <input
+                        type="text"
+                        name="last-name"
+                        id="last-name"
+                        placeholder="Last Name"
+                        required
+                        style="
+                        width:100%;
+                        height:35px;
+                        box-sizing:border-box;
+                        ">
+                </div>
+            </div>
+
+            <div style="
+                margin-bottom:20px;
+                ">
+                <b>Gender</b>
+
+                <div>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female" style="margin-left:20px;">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div style="
+                margin-bottom:20px;
+                ">
+                <label for="dob"><b>Date of Birth</b></label>
+
+                <input
+                    type="date"
+                    name="dob"
+                    id="dob"
+                    style="
+                    width:100%;
+                    height:35px;
+                    box-sizing:border-box;
+                    ">
+            </div>
+
+            <div style="
+                margin-bottom:20px;
+                ">
+                <label for="class"><b>Class</b></label>
+
+                <select
+                    name="class"
+                    id="class"
+                    style="
+                    width:100%;
+                    height:35px;
+                    box-sizing:border-box;
+                    ">
+                    <option selected disabled>Select Class</option>
+                    <option>JSS 1</option>
+                    <option>JSS 2</option>
+                    <option>JSS 3</option>
+                    <option>SSS 1</option>
+                    <option>SSS 2</option>
+                    <option>SSS 3</option>
+                </select>
+            </div>
+
+            <div style="
+                margin-bottom:20px;
+                ">
+                <b>Relationship with Next of Kin</b>
+
+                <div>
+                    <input type="radio" name="relationship" id="father">
+                    <label for="father">Father</label>
+
+                    <input type="radio" name="relationship" id="mother" style="margin-left:20px;">
+                    <label for="mother">Mother</label>
+
+                    <input type="radio" name="relationship" id="guardian" style="margin-left:20px;">
+                    <label for="guardian">Guardian</label>
+                </div>
+            </div>
+
+            <div style="
+                margin-bottom:20px;
+                ">
+                <label for="kin-name"><b>Next of Kin Name</b></label>
+
+                <input
+                    type="text"
+                    name="kin-name"
+                    id="kin-name"
+                    placeholder="Enter Next of Kin Name"
+                    style="
+                    width:100%;
+                    height:35px;
+                    box-sizing:border-box;
+                    ">
+            </div>
+
+            <div style="
+                margin-bottom:20px;
+                ">
+                <label for="email"><b>Next of Kin Email</b></label>
+
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter Email Address"
+                    style="
+                    width:100%;
+                    height:35px;
+                    box-sizing:border-box;
+                    ">
+            </div>
+
+            <div style="
+                margin-bottom:30px;
+                ">
+                <label for="address"><b>Next of Kin Address</b></label>
+
+                <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder="Enter Address"
+                    style="
+                    width:100%;
+                    height:35px;
+                    box-sizing:border-box;
+                    ">
+            </div>
+
+            <button type="reset">
+                Reset
+            </button>
+
+            <button type="submit">
+                Submit
+            </button>
+            <p style="
+text-align:center;
+margin-top:20px;
+">
+    <a href="students.html" style="
+    background:black;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+    ">
+        View Registered Students
+    </a>
+</p>
+
+        </form>
+
+    </div>
+
+    <script src="javascript"></script>
+
+
+</body>
+</html>
